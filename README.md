@@ -42,5 +42,4 @@ To run this project, you will need to:
 The data files are ignored by Git (see .gitignore) due to their size. Contact course staff if you need access to the data files.
 
 ## Authors
-Kimberly Liang
-Suraj Oruganti
+Kimberly Liang and Suraj Oruganti
