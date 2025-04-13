@@ -1,3 +1,8 @@
 /final_proj_part1_data.pkl
 /testRfunction.pkl
 *.mat
+raw_training_data.mat
+leaderboard_data.mat
+
+# Ignore all .mat files in any directory
+**/*.mat
