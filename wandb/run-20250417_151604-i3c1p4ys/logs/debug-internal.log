@@ -1,0 +1,21 @@
+{"time":"2025-04-17T15:16:04.432352-04:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-17T15:16:04.432557-04:00","level":"INFO","msg":"created symlink","path":"/Users/kimberly/Downloads/BE 5210 Spring 2025 Homeworks/BE 5210 Final Project/be5210_final_project/wandb/run-20250417_151604-i3c1p4ys/logs/debug-core.log"}
+{"time":"2025-04-17T15:16:04.655572-04:00","level":"INFO","msg":"created new stream","id":"i3c1p4ys"}
+{"time":"2025-04-17T15:16:04.655667-04:00","level":"INFO","msg":"stream: started","id":"i3c1p4ys"}
+{"time":"2025-04-17T15:16:04.655681-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"i3c1p4ys"}
+{"time":"2025-04-17T15:16:04.65569-04:00","level":"INFO","msg":"handler: started","stream_id":"i3c1p4ys"}
+{"time":"2025-04-17T15:16:04.6557-04:00","level":"INFO","msg":"sender: started","stream_id":"i3c1p4ys"}
+{"time":"2025-04-17T15:16:04.99503-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-17T15:16:05.301395-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-17T15:16:27.189335-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-17T15:16:27.195846-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-17T15:16:31.833451-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-17T15:16:31.910821-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-17T15:16:31.918721-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-17T15:16:32.913388-04:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.735217084}],"total_operations":1}}
+{"time":"2025-04-17T15:16:33.272803-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-17T15:16:34.515498-04:00","level":"INFO","msg":"stream: closing","id":"i3c1p4ys"}
+{"time":"2025-04-17T15:16:34.515652-04:00","level":"INFO","msg":"handler: closed","stream_id":"i3c1p4ys"}
+{"time":"2025-04-17T15:16:34.51598-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"i3c1p4ys"}
+{"time":"2025-04-17T15:16:34.516009-04:00","level":"INFO","msg":"sender: closed","stream_id":"i3c1p4ys"}
+{"time":"2025-04-17T15:16:34.516204-04:00","level":"INFO","msg":"stream: closed","id":"i3c1p4ys"}

@@ -1,0 +1,38 @@
+{
+  "os":  "macOS-13.5-arm64-arm-64bit-Mach-O",
+  "python":  "3.13.0",
+  "startedAt":  "2025-04-17T19:16:04.431084Z",
+  "program":  "/Users/kimberly/Downloads/BE 5210 Spring 2025 Homeworks/BE 5210 Final Project/be5210_final_project/Lightning_BCI-autoencoder.ipynb",
+  "git":  {
+    "remote":  "git@github.com:kimberlyliang/be5210_final_project.git",
+    "commit":  "6304fc6b3ef9525eed16e48be899f58234ea0049"
+  },
+  "email":  "kimberly.yx.liang@gmail.com",
+  "root":  "/Users/kimberly/Downloads/BE 5210 Spring 2025 Homeworks/BE 5210 Final Project/be5210_final_project",
+  "host":  "ist2-15572.apn.wlan.private.upenn.edu",
+  "username":  "kimberly",
+  "executable":  "/usr/local/bin/python3",
+  "codePathLocal":  "Lightning_BCI-autoencoder.ipynb",
+  "cpu_count":  10,
+  "cpu_count_logical":  10,
+  "disk":  {
+    "/":  {
+      "total":  "994662584320",
+      "used":  "780490502144"
+    }
+  },
+  "memory":  {
+    "total":  "17179869184"
+  },
+  "cpu":  {
+    "count":  10,
+    "countLogical":  10
+  },
+  "apple":  {
+    "name":  "Apple M2 Pro",
+    "ecpuCores":  4,
+    "pcpuCores":  6,
+    "gpuCores":  16,
+    "memoryGb":  16
+  }
+}

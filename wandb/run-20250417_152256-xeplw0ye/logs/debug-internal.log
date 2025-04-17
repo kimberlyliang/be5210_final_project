@@ -1,0 +1,22 @@
+{"time":"2025-04-17T15:22:57.687619-04:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-17T15:22:57.687649-04:00","level":"INFO","msg":"created symlink","path":"/Users/kimberly/Downloads/BE 5210 Spring 2025 Homeworks/BE 5210 Final Project/be5210_final_project/wandb/run-20250417_152256-xeplw0ye/logs/debug-core.log"}
+{"time":"2025-04-17T15:22:57.848228-04:00","level":"INFO","msg":"created new stream","id":"xeplw0ye"}
+{"time":"2025-04-17T15:22:57.848574-04:00","level":"INFO","msg":"stream: started","id":"xeplw0ye"}
+{"time":"2025-04-17T15:22:57.848964-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"xeplw0ye"}
+{"time":"2025-04-17T15:22:57.849009-04:00","level":"INFO","msg":"sender: started","stream_id":"xeplw0ye"}
+{"time":"2025-04-17T15:22:57.849072-04:00","level":"INFO","msg":"handler: started","stream_id":"xeplw0ye"}
+{"time":"2025-04-17T15:22:58.081197-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-17T15:30:18.373744-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-04-17T15:30:50.74344-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-04-17T15:31:04.894968-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.103.188.222:63487->35.186.228.49:443: read: operation timed out"}
+{"time":"2025-04-17T15:37:58.322366-04:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/kimberly-yx-liang-university-of-pennsylvania/BCI_comp/xeplw0ye/file_stream"}
+{"time":"2025-04-17T15:40:08.481193-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/kimberly-yx-liang-university-of-pennsylvania/BCI_comp/xeplw0ye/file_stream\": read tcp 10.103.188.222:63869->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-17T15:46:21.583731-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-17T15:46:21.588405-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-17T15:46:22.342895-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-17T15:46:22.590945-04:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary","runtime_seconds":0.247663083}],"total_operations":1}}
+{"time":"2025-04-17T15:46:23.683659-04:00","level":"INFO","msg":"stream: closing","id":"xeplw0ye"}
+{"time":"2025-04-17T15:46:23.683716-04:00","level":"INFO","msg":"handler: closed","stream_id":"xeplw0ye"}
+{"time":"2025-04-17T15:46:23.683732-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xeplw0ye"}
+{"time":"2025-04-17T15:46:23.683766-04:00","level":"INFO","msg":"sender: closed","stream_id":"xeplw0ye"}
+{"time":"2025-04-17T15:46:23.683852-04:00","level":"INFO","msg":"stream: closed","id":"xeplw0ye"}
