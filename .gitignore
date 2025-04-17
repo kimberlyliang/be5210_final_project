@@ -3,3 +3,5 @@
 *.mat
 raw_training_data.mat
 leaderboard_data.mat
+wandb/
+data/
