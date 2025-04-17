@@ -1,9 +1,0 @@
-{"time":"2025-04-17T15:17:27.131545-04:00","level":"INFO","msg":"using version","core version":"0.18.7"}
-{"time":"2025-04-17T15:17:27.131593-04:00","level":"INFO","msg":"created symlink","path":"/Users/kimberly/Downloads/BE 5210 Spring 2025 Homeworks/BE 5210 Final Project/be5210_final_project/wandb/run-20250417_151725-2r6p0uhv/logs/debug-core.log"}
-{"time":"2025-04-17T15:17:27.245629-04:00","level":"INFO","msg":"created new stream","id":"2r6p0uhv"}
-{"time":"2025-04-17T15:17:27.24569-04:00","level":"INFO","msg":"stream: started","id":"2r6p0uhv"}
-{"time":"2025-04-17T15:17:27.245687-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"2r6p0uhv"}
-{"time":"2025-04-17T15:17:27.245713-04:00","level":"INFO","msg":"sender: started","stream_id":"2r6p0uhv"}
-{"time":"2025-04-17T15:17:27.245707-04:00","level":"INFO","msg":"handler: started","stream_id":"2r6p0uhv"}
-{"time":"2025-04-17T15:17:27.402866-04:00","level":"INFO","msg":"Starting system monitor"}
-{"time":"2025-04-17T15:17:27.668689-04:00","level":"INFO","msg":"Pausing system monitor"}

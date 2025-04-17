@@ -1,9 +1,0 @@
-{"time":"2025-04-17T16:00:35.617933-04:00","level":"INFO","msg":"using version","core version":"0.18.7"}
-{"time":"2025-04-17T16:00:35.617955-04:00","level":"INFO","msg":"created symlink","path":"/Users/kimberly/Downloads/BE 5210 Spring 2025 Homeworks/BE 5210 Final Project/be5210_final_project/wandb/run-20250417_160033-sxktc1gz/logs/debug-core.log"}
-{"time":"2025-04-17T16:00:35.733476-04:00","level":"INFO","msg":"created new stream","id":"sxktc1gz"}
-{"time":"2025-04-17T16:00:35.733526-04:00","level":"INFO","msg":"stream: started","id":"sxktc1gz"}
-{"time":"2025-04-17T16:00:35.733529-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"sxktc1gz"}
-{"time":"2025-04-17T16:00:35.733545-04:00","level":"INFO","msg":"sender: started","stream_id":"sxktc1gz"}
-{"time":"2025-04-17T16:00:35.733527-04:00","level":"INFO","msg":"handler: started","stream_id":"sxktc1gz"}
-{"time":"2025-04-17T16:00:36.435371-04:00","level":"INFO","msg":"Starting system monitor"}
-{"time":"2025-04-17T16:15:21.903857-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/kimberly-yx-liang-university-of-pennsylvania/BCI_comp/sxktc1gz/file_stream\": read tcp 10.103.188.222:65049->35.186.228.49:443: read: connection reset by peer"}
