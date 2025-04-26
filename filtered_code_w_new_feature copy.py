@@ -199,7 +199,7 @@ def randomForestPrediction(X, Y):
   return rf
 
 def xgBoostPrediction(X, Y):
-    xgb = XGBRegressor(n_estimators=100, random_state=42)
+    xgb = XGBRegressor(n_estimators=100, random_state=42, tree_method='gpu_hist')
     xgb.fit(X, Y)
     return xgb
 
@@ -443,7 +443,7 @@ for i in range(len(ecog)):
 
   #Generate predictions for leaderboard data
   # Use RandomForest for subjects 1 and 3, XGBoost for subject 2
-  beta = randomForestPrediction(X, Y)
+  beta = xgBoostPrediction(X, Y)
 
   roughPreds = beta.predict(X_pred)
 

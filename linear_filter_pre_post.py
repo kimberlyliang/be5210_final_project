@@ -11,6 +11,7 @@ Original file is located at
 
 import scipy.io, scipy.interpolate
 from sklearn.ensemble import RandomForestRegressor
+from xgboost import XGBRegressor
 
 
 pred_data = scipy.io.loadmat("leaderboard_data.mat")
@@ -200,6 +201,11 @@ def randomForestPrediction(X, Y):
   rf.fit(X, Y)
   return rf
 
+def xgBoostPrediction(X, Y):
+    xgb = XGBRegressor(n_estimators=100, random_state=42)
+    xgb.fit(X, Y)
+    return xgb
+
 import numpy as np
 import scipy.interpolate
 
@@ -311,7 +317,13 @@ X_test, Y_test = prepare_data(all_test_features, downsampled_test_dg, lag=3)
 
 # beta = linearPrediction(X_train, Y_train)
 # # preds = np.matmul(X_test, beta)
-beta = randomForestPrediction(X_train, Y_train)
+
+# Use RandomForest for subjects 1 and 3, XGBoost for subject 2 during evaluation
+if i == 1: # Subject 2 (index 1)
+    beta = xgBoostPrediction(X_train, Y_train)
+else:      # Subjects 1 and 3 (index 0 and 2)
+    beta = randomForestPrediction(X_train, Y_train)
+
 preds = beta.predict(X_test)
 
 
@@ -431,7 +443,12 @@ for i in range(len(ecog)):
   X_pred = np.array([pred_features[i:i+lagVal].flatten() for i in range(len(pred_features) - lagVal + 1)])
 
   #Generate predictions for leaderboard data
-  beta = randomForestPrediction(X, Y)
+  # Use RandomForest for subjects 1 and 3, XGBoost for subject 2
+  if i == 1: # Subject 2 (index 1)
+      beta = xgBoostPrediction(X, Y)
+  else: # Subjects 1 and 3 (index 0 and 2)
+      beta = randomForestPrediction(X, Y)
+
   roughPreds = beta.predict(X_pred)
 
   allPreds = moving_average_interpolated(roughPreds, 8)
@@ -471,10 +488,10 @@ for i, arr in enumerate(predicted_dg_python):
 
 # now save under the name 'predicted_dg' as a cell array
 scipy.io.savemat(
-    'updated_predictions_rf.mat',
+    'updated_combined_predictions_rf_xgb.mat',
     {'predicted_dg': cell_array},
     format='5'
 )
 
 allBetasArray = np.array(allBetas, dtype = 'object')
-allBetasArray.dump('allBetas.pkl')
+allBetasArray.dump('new_allBetas.pkl')
