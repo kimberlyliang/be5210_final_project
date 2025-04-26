@@ -312,27 +312,29 @@ X_train, Y_train = prepare_data(all_train_features, downsampled_train_dg, lag=3)
 X_test, Y_test = prepare_data(all_test_features, downsampled_test_dg, lag=3)
 
 # beta = linearPrediction(X_train, Y_train)
-# # preds = np.matmul(X_test, beta)
+# preds = np.matmul(X_test, beta)
+
+beta = randomForestPrediction(X_train, Y_train)
 
 # Use RandomForest for subjects 1 and 3, XGBoost for subject 2 during evaluation
-if i == 1: # Subject 2 (index 1)
-    beta = xgBoostPrediction(X_train, Y_train)
-else:      # Subjects 1 and 3 (index 0 and 2)
-    beta = randomForestPrediction(X_train, Y_train)
+# if i == 1: # Subject 2 (index 1)
+#     beta = xgBoostPrediction(X_train, Y_train)
+# else:      # Subjects 1 and 3 (index 0 and 2)
+#     beta = randomForestPrediction(X_train, Y_train)
 
 preds = beta.predict(X_test)
 
 
 trainPreds = moving_average_interpolated(preds, 10)
 
-print("Finger 1:", stats.pearsonr(trainPreds[:, 0], Y_test[:, 0])[0])
-print("Finger 2:", stats.pearsonr(trainPreds[:, 1], Y_test[:, 1])[0])
-print("Finger 3:", stats.pearsonr(trainPreds[:, 2], Y_test[:, 2])[0])
-print("Finger 4:", stats.pearsonr(trainPreds[:, 3], Y_test[:, 3])[0])
-print("Finger 5:", stats.pearsonr(trainPreds[:, 4], Y_test[:, 4])[0])
+# print("Finger 1:", stats.pearsonr(trainPreds[:, 0], Y_test[:, 0])[0])
+# print("Finger 2:", stats.pearsonr(trainPreds[:, 1], Y_test[:, 1])[0])
+# print("Finger 3:", stats.pearsonr(trainPreds[:, 2], Y_test[:, 2])[0])
+# print("Finger 4:", stats.pearsonr(trainPreds[:, 3], Y_test[:, 3])[0])
+# print("Finger 5:", stats.pearsonr(trainPreds[:, 4], Y_test[:, 4])[0])
 
-plt.plot(trainPreds[:1000,1])
-plt.plot(Y_test[:1000, 1])
+# plt.plot(trainPreds[:1000,1])
+# plt.plot(Y_test[:1000, 1])
 
 # Interpolate the predictions
 old_freq = 20                              # 20 samples per second
