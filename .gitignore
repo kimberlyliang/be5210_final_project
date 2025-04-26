@@ -6,3 +6,4 @@ leaderboard_data.mat
 wandb/
 data/
 *.npy
+*.pkl
