@@ -319,10 +319,7 @@ X_test, Y_test = prepare_data(all_test_features, downsampled_test_dg, lag=3)
 # # preds = np.matmul(X_test, beta)
 
 # Use RandomForest for subjects 1 and 3, XGBoost for subject 2 during evaluation
-if i == 1: # Subject 2 (index 1)
-    beta = xgBoostPrediction(X_train, Y_train)
-else:      # Subjects 1 and 3 (index 0 and 2)
-    beta = randomForestPrediction(X_train, Y_train)
+beta = randomForestPrediction(X_train, Y_train)
 
 preds = beta.predict(X_test)
 
@@ -488,7 +485,7 @@ for i, arr in enumerate(predicted_dg_python):
 
 # now save under the name 'predicted_dg' as a cell array
 scipy.io.savemat(
-    'updated_combined_predictions_rf_xgb.mat',
+    'updated_combined_predictions_here.mat',
     {'predicted_dg': cell_array},
     format='5'
 )
